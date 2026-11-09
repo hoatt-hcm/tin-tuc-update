@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HTNews — Tin tức &amp; Ngân hàng | 09/11/2026</title>
+<meta name="description" content="Top 10 tin kinh tế - tài chính - chính trị trong nước và quốc tế, cập nhật 6h, 12h và 20h hàng ngày.">
+<style>
+:root{--red:#C8102E;--navy:#0B3D91;--ink:#111;--muted:#666;--line:#e5e5e5}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.45;background:#fff}
+header{background:var(--red);color:#fff;padding:18px 16px 14px}
+header h1{margin:0;font-size:22px} header p{margin:6px 0 0;font-size:13px;opacity:.95}
+.numbers{display:flex;flex-wrap:wrap;background:#111;color:#fff}
+.numbers div{flex:1 1 22%;text-align:center;padding:10px 4px;border-right:1px solid #333}
+.numbers b{display:block;font-size:16px} .numbers span{font-size:10px;color:#bbb;text-transform:uppercase}
+main{max-width:860px;margin:0 auto;padding:14px 14px 40px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.controls button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;font-size:13px;cursor:pointer}
+.controls button.active{background:var(--red);color:#fff;border-color:var(--red)}
+.controls button.active.navy{background:var(--navy);border-color:var(--navy)}
+.slots{display:flex;gap:8px;margin:0 0 14px}
+.slots span{flex:1;text-align:center;padding:9px;border:1px solid var(--line);border-radius:8px;font-size:13px}
+.slots span.on{background:#111;color:#fff}
+.slots span.off{color:var(--muted)}
+h2.sec{color:#fff;padding:9px 12px;border-radius:6px 6px 0 0;font-size:16px;margin:22px 0 0}
+h2.domestic{background:var(--red)} h2.international{background:var(--navy)}
+h2.hot{background:#111}
+h3.cat{color:#fff;padding:7px 10px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;margin:14px 0 0}
+.domestic h3.cat{background:var(--red)} .international h3.cat{background:var(--navy)}
+article{border:1px solid var(--line);border-top:0;padding:11px 12px}
+article h4{margin:0 0 5px;font-size:15px}
+article p{margin:0;font-size:14px}
+article .src{font-size:12px;color:var(--muted);margin-top:6px}
+details{margin-top:8px} summary{cursor:pointer;color:var(--red);font-weight:600;font-size:13px}
+.international summary{color:var(--navy)}
+details a{color:var(--red);word-break:break-all}
+footer{max-width:860px;margin:0 auto;padding:0 14px 30px;color:var(--muted);font-size:12px}
+@media(min-width:700px){.cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}.cols>div{min-width:0}}
+
+nav.maintabs{display:flex;gap:0;background:#111;position:sticky;top:0;z-index:10}
+nav.maintabs button{flex:1;border:0;background:#111;color:#fff;padding:13px 8px;font-size:16px;font-weight:700;cursor:pointer;letter-spacing:.5px}
+nav.maintabs button.active{background:var(--red)}
+nav.maintabs button.active.banktab{background:#0E6B4A}
+.tabpane[hidden]{display:none}
+.banknumbers{display:flex;flex-wrap:wrap;background:#0E6B4A;color:#fff}
+.banknumbers div{flex:1 1 30%;text-align:center;padding:10px 4px;border-right:1px solid rgba(255,255,255,.25)}
+.banknumbers b{display:block;font-size:16px} .banknumbers span{font-size:10px;color:#cfe8dc;text-transform:uppercase}
+h2.bank{background:#0E6B4A}
+h3.bankcat{background:#0E6B4A}
+.banknote{font-size:12px;color:var(--muted);margin:8px 0 0}
+.tblwrap{overflow-x:auto;border:1px solid var(--line);border-top:0}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:520px}
+th,td{border:1px solid var(--line);padding:7px 8px;text-align:left}
+th{background:#f2f2f2}
+.bank article{border:1px solid var(--line);margin:0 0 8px}
+.bank article:last-child{margin-bottom:0}
+tr.grp td{background:#eef6f1;font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.5px;color:#0E6B4A}
+.ok{color:#15803d;font-weight:700}
+.bad{color:#C8102E;font-weight:700}
+.verdict{margin:10px 0 0;border:1px solid #0E6B4A;border-left:5px solid #0E6B4A;background:#f4faf7;padding:12px;border-radius:0 6px 6px 0;font-size:13px;line-height:1.55}
+.verdict h4{margin:0;color:#0E6B4A;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
+.verdict p{margin:6px 0 0}
+.hl-red{background:#fde8e8;color:#B91C1C;font-weight:700;padding:1px 5px;border-radius:3px}
+.hl-green{background:#dcfce7;color:#15803d;font-weight:700;padding:1px 5px;border-radius:3px}
+h2.world{background:#6D28D9}
+</style>
+</head>
+<body>
+<header>
+<h1>HTNEWS</h1>
+<p>Tin tức &amp; Ngân hàng — Bản tin sáng thứ Hai 09/11/2026 • Cập nhật 6h / 12h / 20h</p>
+</header>
+<div class="numbers">
+<div><b>1.725,36</b><span>VN-Index (−0,88% phiên 06/11)</span></div>
+<div><b>138–141 tr</b><span>Vàng SJC / lượng</span></div>
+<div><b>25.615</b><span>Tỷ giá trung tâm</span></div>
+<div><b>~75.800 USD</b><span>Bitcoin</span></div>
+<div><b>+1,09%</b><span>Nasdaq (phiên 06/11)</span></div>
+<div><b>~98,3 USD</b><span>Dầu Brent</span></div>
+<div><b>3,75–4,00%</b><span>Lãi suất Fed</span></div>
+<div><b>4,00%</b><span>BoE (tăng 05/11)</span></div>
+</div>
+<main>
+<nav class="maintabs" id="maintabs"><button class="active" data-tab="news">TIN TỨC</button><button class="banktab" data-tab="bank">NGÂN HÀNG</button></nav>
+<div id="tab-news" class="tabpane">
+<div class="controls" id="filters">
+<button class="active" data-f="all">Tất cả</button>
+<button data-f="domestic">Trong nước</button>
+<button data-f="international">Quốc tế</button>
+<button data-f="hot">Tin nóng</button>
+</div>
+<div class="slots"><span class="on">6h — đã phát hành</span><span class="off">12h — chưa đến giờ</span><span class="off">20h — chưa đến giờ</span></div>
+
+<section id="hot">
+<h2 class="sec hot">TIN NÓNG — ĐƯỢC THẢO LUẬN NHIỀU NHẤT</h2>
+<article><h4>1. Hormuz đêm qua: Trump nói khó tấn công mới nếu đàm phán tiến triển; Mỹ lập lực lượng đặc nhiệm chặn tuyến đường bộ vào Iran</h4><p>Tổng thống Trump nói với CNN rằng ông &ldquo;rất khó có khả năng&rdquo; ra lệnh tấn công mới vào Iran chừng nào đàm phán chấm dứt xung đột còn tiến triển. Cùng lúc, Mỹ công bố lập lực lượng đặc nhiệm 20 người nhằm chặn các tuyến vận chuyển đường bộ vào Iran; Lực lượng Vệ binh Quốc gia UAE cứu 22 thuyền viên sau khi một tàu hàng bốc cháy ở Vịnh Oman. IRGC cảnh báo sẽ đáp trả &ldquo;tàn khốc và nghiêm trọng&rdquo; nếu Mỹ–Israel nối lại tấn công; Tehran cũng dỡ giới hạn tên lửa. Lưu lượng qua eo biển Hormuz vẫn chỉ khoảng 9% mức bình thường sau khi 3 tàu chở dầu bốc cháy trong 2 ngày qua.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Al Jazeera — <a href="https://www.aljazeera.com/amp/news/liveblog/2026/11/8/iran-war-live-explosions-hit-qeshm-us-moves-to-block-land-supply-routes" target="_blank" rel="noopener">Đọc bài gốc</a> • Tribune — <a href="https://tribune.com.pk/story/2639258/uae-says-it-rescued-22-people-after-cargo-ship-caught-fire-in-sea-of-oman" target="_blank" rel="noopener">Đọc bài gốc</a> • Gulf News — <a href="https://gulfnews.com/world/mena/uae-rescues-22-crew-in-gulf-of-oman-as-us-tightens-iran-blockade-and-tehran-lifts-missile-limits-1.500739993" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>2. Không khí lạnh mạnh nhất từ đầu mùa tràn về: miền Bắc chuyển rét từ hôm nay, vùng núi cao dưới 13&deg;C; mưa lớn miền Trung đến 11/11</h4><p>Bộ phận không khí lạnh mạnh đang tràn xuống phía Nam: từ đêm 8/11 vùng núi Bắc Bộ chuyển rét, vùng núi cao có nơi dưới 13&deg;C; các khu vực khác ở Bắc Bộ và Bắc Trung Bộ bắt đầu chuyển rét từ hôm nay 9/11, nhiệt độ thấp nhất phổ biến 15–18&deg;C. Từ đêm 8 đến đêm 11/11, khu vực từ phía nam Nghệ An đến Đà Nẵng và phía đông Quảng Ngãi–Đắk Lắk có mưa lớn diện rộng, cục bộ trên 700mm (Huế, Đà Nẵng, phía đông Quảng Ngãi 250–450mm); sông từ Quảng Trị đến Đắk Lắk có thể xuất hiện lũ trong 4 ngày tới. Công điện 73/CĐ-TTg yêu cầu 8 tỉnh, 8 bộ chủ động ứng phó mưa lớn, lũ quét, sạt lở đất.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đời sống &amp; Pháp luật — <a href="https://doisongphapluat.nguoiduatin.vn/khong-khi-lanh-manh-tran-xuong-tu-toi-nay-mien-bac-chuyen-ret-mien-trung-don-mua-lon-keo-dai-a676405.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>3. Trump mời CEO UFC Dana White làm thư ký báo chí Nhà Trắng; White gặp Trump hôm nay</h4><p>Tổng thống Trump thông báo trên Truth Social ngày 7/11 rằng ông đã mời Dana White, Chủ tịch kiêm CEO của UFC, đảm nhiệm vị trí thư ký báo chí Nhà Trắng — ghế trống từ khi Katie Zacharia rời nhiệm sở sau 5 ngày hồi tháng 10. Trump còn đề nghị White đưa theo 6 võ sĩ UFC làm &ldquo;trợ lý&rdquo;. White cho biết sẽ bay tới Washington và gặp Trump hôm nay (thứ Hai 9/11); ông đăng ảnh đứng sau bục phát biểu Nhà Trắng với chú thích &ldquo;On to the next chapter&rdquo; (Sang chương tiếp theo). Hiện chưa rõ đề nghị này nghiêm túc đến mức nào.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: USA Today — <a href="https://www.usatoday.com/story/news/politics/2026/11/07/trump-ufc-dana-white-press-secretary/92662587007/" target="_blank" rel="noopener">Đọc bài gốc</a> • Al Jazeera — <a href="https://www.aljazeera.com/news/2026/11/8/why-trump-wants-ufc-chief-dana-white-as-his-new-white-house-press-secretary" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</section>
+
+<section id="domestic" class="domestic">
+<h2 class="sec domestic">TRONG NƯỚC — 10 TIN</h2>
+<div class="cols"><div>
+<h3 class="cat">Kinh tế</h3>
+<article><h4>1. Diễn đàn hợp tác kinh tế, khoa học công nghệ Việt–Nhật hôm nay 9/11 tại Tokyo</h4><p>Trong khuôn khổ chuyến thăm chính thức Nhật Bản của Tổng Bí thư, Chủ tịch nước Tô Lâm (8–11/11), Diễn đàn hợp tác kinh tế, khoa học công nghệ Việt Nam – Nhật Bản diễn ra hôm nay 9/11, cùng các cuộc trao đổi cấp bộ trưởng về công nghiệp, thương mại và năng lượng. Thương mại song phương 9 tháng đầu năm 2026 đạt khoảng 44 tỷ USD (+15%); năm 2025 đạt khoảng 51,4 tỷ USD; hai bên hướng tới 80 tỷ USD (phấn đấu 100 tỷ) vào 2030.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Báo Công Thương — <a href="http://hoptacbonnha.vn/hop-tac-dau-tu/dong-luc-moi-cho-hop-tac-kinh-te-thuong-mai-viet-nam-nhat-ban.html" target="_blank" rel="noopener">Đọc bài gốc</a> • VnEconomy — <a href="https://vneconomy.vn/viet-nam-nhat-ban-chuyen-tu-hop-tac-kinh-te-sang-lien-ket-sau-rong-dong-hanh-va-dong-kien-tao.htm" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>2. Siêu cảng container TP.HCM: liên danh Vinhomes được chấp thuận đầu tư, 33 bến cảng, vốn hơn 153.500 tỷ đồng</h4><p>Liên danh 5 doanh nghiệp do công ty con của Vinhomes đứng đầu vừa được chấp thuận đầu tư siêu cảng container tại TP.HCM, với quy mô 33 bến cảng và tổng vốn hơn 153.500 tỷ đồng — một trong những dự án hạ tầng cảng biển lớn nhất từ trước đến nay tại Việt Nam.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>3. Hòa Phát: Quảng Ngãi cấp giấy phép môi trường dự án ray đường sắt &amp; thép đặc biệt Dung Quất</h4><p>UBND tỉnh Quảng Ngãi vừa ký quyết định cấp giấy phép môi trường cho dự án sản xuất ray đường sắt và thép đặc biệt Hòa Phát Dung Quất. Dự án đã hoàn thành 80% khối lượng, dự kiến cho ra những sản phẩm đầu tiên từ quý II/2027 — bước tiến quan trọng trong chuỗi cung ứng thép đường sắt nội địa.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div><div>
+<h3 class="cat">Tài chính</h3>
+<article><h4>4. Vàng sáng 9/11: SJC 138–141 triệu đ/lượng, giảm 1,5 triệu trong tuần; thế giới 4.072 USD/oz</h4><p>Giá vàng miếng SJC sáng nay 138–141 triệu đồng/lượng (mua–bán), giảm 1,5 triệu đồng/lượng trong tuần; vàng nhẫn SJC 136,5–140,5 triệu đồng/lượng; chênh lệch mua–bán duy trì 3 triệu đồng/lượng. Vàng thế giới có thời điểm lùi về gần 4.030 USD/ounce trước khi kết tuần ngay dưới mốc 4.070 USD/ounce, tăng khoảng 195 USD/ounce (gần 5%) so với đầu tuần.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Simplize — <a href="https://simplize.vn/gia-vang/sjc" target="_blank" rel="noopener">Đọc bài gốc</a> • Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>5. PNJ: Giám đốc cao cấp phụ trách Tài chính Nguyễn Minh Hải từ nhiệm từ 17/11</h4><p>PNJ nhận được đơn từ nhiệm của ông Nguyễn Minh Hải, Giám đốc cao cấp phụ trách Tài chính nhiệm kỳ 2025–2028, với lý do nguyện vọng cá nhân. Ngay sau đó, PNJ đã thông qua nghị quyết chấp thuận việc ông Hải thôi đảm nhiệm chức vụ trên kể từ ngày 17/11/2026.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>6. BSR nâng kế hoạch doanh thu cả năm lên 190.831 tỷ đồng (+23,8%)</h4><p>BSR nâng kế hoạch tổng doanh thu hợp nhất cả năm từ 154.140 tỷ đồng lên 190.831 tỷ đồng, tương đương mức tăng 36.691 tỷ đồng (23,8%) so với phương án được phê duyệt hồi cuối tháng 4 — phản ánh kỳ vọng thị trường lọc dầu và giá dầu phục hồi cuối năm.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>7. Novaland còn gần 15.000 tỷ đồng nợ gốc quá hạn, đã được gia hạn gần 2.900 tỷ</h4><p>Novaland còn gần 15.000 tỷ đồng nợ gốc quá hạn, trong đó đã được các chủ nợ gia hạn gần 2.900 tỷ đồng. Doanh nghiệp đặt mục tiêu kinh doanh giai đoạn 2026–2030 với tổng doanh thu dự án dự kiến hơn 516.800 tỷ đồng và lợi nhuận hơn 188.300 tỷ đồng.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: VNBizNews — <a href="https://vnbiznews.com/" target="_blank" rel="noopener">Đọc bài gốc</a> • Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div><div>
+<h3 class="cat">Chính trị / Thời sự</h3>
+<article><h4>8. SBV ban hành Quyết định 2409/QĐ-NHNN — kế hoạch hành động ngành ngân hàng</h4><p>Thống đốc Ngân hàng Nhà nước đã ký ban hành Quyết định số 2409/QĐ-NHNN về Kế hoạch hành động của ngành Ngân hàng nhằm triển khai Đề án &ldquo;Tiếp tục hiện đại hóa hệ thống ngân hàng, xử lý các tổ chức tín dụng yếu kém, tăng cường khả năng tiếp cận vốn cho doanh nghiệp, nhất là doanh nghiệp nhỏ và vừa&rdquo;. Mục tiêu: đẩy nhanh xử lý các tổ chức tín dụng yếu kém, nâng cao năng lực tài chính, quản trị và khả năng chống chịu của hệ thống.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>9. Tọa đàm &ldquo;Giảm lãi suất&rdquo; 14h hôm nay 9/11: bàn dư địa hạ lãi suất hỗ trợ tăng trưởng 2 con số</h4><p>Tạp chí Kinh tế Việt Nam/VnEconomy tổ chức tọa đàm &ldquo;Giảm lãi suất: Dư địa và giải pháp hỗ trợ tăng trưởng 2 con số&rdquo; lúc 14h hôm nay 9/11, với các chuyên gia từ Hiệp hội Ngân hàng Việt Nam, Hiệp hội Thị trường Trái phiếu Việt Nam và VAMC. Dù gần 30 ngân hàng đã công bố giảm lãi suất tiền gửi/tiền vay sau chỉ đạo quyết liệt của Chính phủ và NHNN, mặt bằng lãi suất mới chỉ giảm rời rạc, chưa đạt mục tiêu giảm 1,5–2%.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: VnEconomy — <a href="https://vneconomy.vn/sap-dien-ra-toa-dam-giam-lai-suat-du-dia-va-giai-phap-ho-tro-tang-truong-2-con-so.htm" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>10. Quốc Cường Gia Lai kiến nghị đưa dự án Bắc Phước Kiển vào danh mục thí điểm nhà ở thương mại</h4><p>Quốc Cường Gia Lai vừa gửi văn bản kiến nghị UBND TP.HCM tiếp tục xem xét đưa dự án Khu dân cư Bắc Phước Kiển vào danh mục dự án thí điểm nhà ở thương mại theo Nghị quyết 171/2024/QH15 — động thái nhằm tháo gỡ vướng mắc pháp lý kéo dài cho dự án.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div></div>
+</section>
+
+<section id="international" class="international">
+<h2 class="sec international">QUỐC TẾ — 10 TIN</h2>
+<div class="cols"><div>
+<h3 class="cat">Kinh tế</h3>
+<article><h4>1. Mỹ lập lực lượng đặc nhiệm 20 người chặn tuyến vận chuyển đường bộ vào Iran; Tehran dỡ giới hạn tên lửa</h4><p>Mỹ công bố thành lập lực lượng đặc nhiệm 20 thành viên nhằm phá vỡ các tuyến tiếp tế đường bộ của Iran, siết chặt phong tỏa hải quân đối với các cảng Iran. Tehran đáp trả bằng việc dỡ giới hạn tên lửa, trong khi Qatar cho biết vẫn tiếp tục nỗ lực trung gian hòa giải giữa Mỹ và Iran để ngăn leo thang. Ngoại trưởng Iran Abbas Araghchi cho biết đã điện đàm với 12 ngoại trưởng trong 48 giờ qua.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Gulf News — <a href="https://gulfnews.com/world/mena/uae-rescues-22-crew-in-gulf-of-oman-as-us-tightens-iran-blockade-and-tehran-lifts-missile-limits-1.500739993" target="_blank" rel="noopener">Đọc bài gốc</a> • Tribune — <a href="https://tribune.com.pk/story/2639099/qatar-says-its-mediation-efforts-between-us-and-iran-continue-to-prevent-escalation?amp=1" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>2. COP31 khai mạc hôm nay 9/11 tại Antalya — &ldquo;COP thực thi&rdquo;, trọng tâm điện khí hóa và tài chính khí hậu</h4><p>Hội nghị khí hậu COP31 khai mạc hôm nay 9/11 tại Antalya, Thổ Nhĩ Kỳ, kéo dài đến 20/11, do Thổ Nhĩ Kỳ đăng cai và Úc dẫn dắt đàm phán — lần đầu COP có hai nước đồng chủ trì. Trọng tâm: điện khí hóa (mục tiêu điện chiếm 35% năng lượng tiêu thụ cuối cùng vào 2035), tài chính khí hậu và thích ứng; Thượng đỉnh lãnh đạo dự kiến 11–12/11. Kế hoạch khí hậu quốc gia mới chỉ đưa mức cắt giảm phát thải khoảng 6% vào 2035, xa mục tiêu 60% cần thiết để giữ mức 1,5&deg;C.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: UNFCCC — <a href="https://unfccc.int/cop31/about" target="_blank" rel="noopener">Đọc bài gốc</a> • Le Monde — <a href="https://www.lemonde.fr/en/environment/article/2026/11/08/cop31-conference-turkey-aims-to-move-climate-up-the-agenda-in-a-crisis-rocked-world_6775243_114.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>3. CPI Mỹ tháng 10 công bố ngày mai 10/11 — tâm điểm của tuần trước thềm họp Fed tháng 12</h4><p>Báo cáo lạm phát CPI tháng 10 của Mỹ sẽ công bố ngày mai 10/11 — dữ liệu quan trọng nhất của tuần trước thềm họp Fed tháng 12, khi thị trường đang định giá khoảng 77% khả năng Fed tăng lãi suất sau báo cáo việc làm tháng 10 (+165.000 việc làm, vượt xa kỳ vọng). Số liệu có thể bị méo mó do khoảng trống thống kê vì chính phủ liên bang từng đóng cửa.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Swiss Financial Time — <a href="https://www.swissfinancialtime.ch/2026/11/brent-settles-at-9832-as-oil-posts-its.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div><div>
+<h3 class="cat">Tài chính</h3>
+<article><h4>4. Vàng thế giới có lúc vọt 4.132 USD/oz sau bầu cử Mỹ rồi quay đầu giảm; chốt tuần ~4.072 USD/oz</h4><p>Giá vàng thế giới có thời điểm vọt lên mốc 4.132 USD/ounce sau bầu cử giữa kỳ Mỹ rồi quay đầu giảm do áp lực từ báo cáo việc làm; chốt tuần ngay dưới 4.070 USD/ounce, tăng khoảng 195 USD/ounce (gần 5%) so với đầu tuần — tốt nhất kể từ tháng 8. UniCredit dự báo vàng đi ngang trong khoảng 3.900–4.500 USD/ounce đến cuối năm 2026.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: VNBizNews — <a href="https://vnbiznews.com/" target="_blank" rel="noopener">Đọc bài gốc</a> • Đầu tư Chứng khoán — <a href="https://dautu.kinhtechungkhoan.vn/1-phut-truoc-gio-giao-dich-phien-9-11-nganh-dien-tiep-tuc-co-bien-lanh-dao-pnj-tu-nhiem-bau-duc-bao-tin-vui-1474025.html" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>5. Chứng khoán Ấn Độ giảm phiên giao dịch Muhurat dịp Diwali, chấm dứt chuỗi thắng 8 năm</h4><p>Chỉ số Sensex và Nifty của Ấn Độ đều giảm trong phiên giao dịch Muhurat dịp Diwali, chấm dứt chuỗi 8 năm tăng điểm liên tiếp trong phiên giao dịch đặc biệt này — phản ánh tâm lý thận trọng của nhà đầu tư trước biến động toàn cầu.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Mathrubhumi — <a href="https://english.mathrubhumi.com/amp/education/school-assembly-headlines-november-9-2026-national-international-business-sports-wq5fahu8" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>6. Bitcoin ~75.800 USD, giữ trên mốc 75.000 USD cuối tuần</h4><p>Bitcoin dao động quanh 75.800 USD, giữ trên mốc 75.000 USD trong phiên cuối tuần sau khi chạm đáy 74.762 USD phiên thứ Sáu — thấp nhất kể từ 21/8; giảm khoảng 2% cả tuần và 7,3% trong 30 ngày. ETF Bitcoin giao ngay tại Mỹ rút ròng 430 triệu USD phiên thứ Năm sau làn sóng thanh lý 1,27 tỷ USD. Giới phân tích: cần vượt lại 77.000 USD mới lấy lại đà tăng.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Finnhub — <a href="https://finnhub.io/?q=%22BTC%22" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div><div>
+<h3 class="cat">Chính trị / Thời sự</h3>
+<article><h4>7. Israel: Bộ trưởng Quốc phòng Katz cảnh báo &ldquo;nhiệm vụ với Iran chưa hoàn thành&rdquo;</h4><p>Bộ trưởng Quốc phòng Israel Israel Katz tuyên bố hôm Chủ nhật: &ldquo;Nhiệm vụ với Iran vẫn chưa hoàn thành. Iran đang tìm cách khôi phục nỗ lực sở hữu vũ khí hạt nhân — cùng những nỗ lực nghiêm trọng khác đặt Nhà nước Israel vào nguy hiểm thực sự.&rdquo; Ông đồng thời cảnh báo Hezbollah không nổ súng nếu chiến sự tái diễn. Tehran luôn phủ nhận theo đuổi vũ khí hạt nhân. Cảnh báo đưa ra trong bối cảnh chưa rõ Thủ tướng Netanyahu có giành được ủng hộ của Mỹ cho một chiến dịch quân sự mới hay không.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: The Hindu — <a href="https://www.thehindu.com/news/international/israel-defence-minister-says-mission-not-complete-on-iran/article71680896.ece" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>8. Bầu cử giữa kỳ Mỹ: kiểm phiếu gần hoàn tất — Dân chủ 252 ghế Hạ viện, ít nhất 54 ghế Thượng viện</h4><p>Kiểm phiếu bầu cử giữa kỳ Mỹ ngày 3/11 gần hoàn tất: Đảng Dân chủ giành 252 ghế Hạ viện (cần 218 để chiếm đa số) và ít nhất 54 ghế Thượng viện sau khi lật 7 ghế của Cộng hòa; 2 ghế Thượng viện (Alaska, Mississippi) chưa ngã ngũ. Đảng Dân chủ cũng thắng 22/34 ghế thống đốc, lật 5 ghế của Cộng hòa. Chủ tịch Hạ viện Mike Johnson tuyên bố sẽ không tái tranh cử vị trí lãnh đạo Cộng hòa; lãnh đạo Cộng hòa hai viện sẽ bầu chọn ngày 10/11.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Political.org — <a href="https://political.org/explained/2026-midterm-elections/" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>9. Thuyền di cư chìm ngoài khơi Senegal: ít nhất 21 người chết, có thể lên 34</h4><p>Ít nhất 21 người thiệt mạng sau khi một thuyền chở người di cư chìm ngoài khơi Kébémer, tây bắc Senegal, theo Bộ Nội vụ nước này; chỉ 1 người được cứu sống và công tác tìm kiếm vẫn tiếp tục. Truyền thông Senegal đưa tin số người chết có thể lên tới 34. Tuyến Đại Tây Dương từ Tây Phi tới quần đảo Canary (Tây Ban Nha) là một trong những tuyến di cư nguy hiểm nhất thế giới — 635 người đã thiệt mạng chỉ trong 5 tháng đầu năm 2026.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: The Hindu — <a href="https://www.thehindu.com/news/international/migrant-boat-sinks-off-senegal-death-toll/article71680824.ece" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+<article><h4>10. Ấn Độ: sập nhà ở Delhi, 7 người chết sau hơn 70 giờ cứu hộ; không khí Delhi ô nhiễm nhất thế giới</h4><p>Số người chết trong vụ sập nhà tại khu Hauz Qazi, Delhi đã tăng lên 7 người sau hơn 70 giờ cứu hộ kể từ vụ việc ngày 5/11. Cùng lúc, chất lượng không khí Delhi rơi xuống mức &ldquo;rất kém&rdquo; dịp Diwali và được một thiết bị giám sát Thụy Sĩ xếp là thành phố lớn ô nhiễm nhất thế giới — dự báo còn chuyển sang mức &ldquo;nghiêm trọng&rdquo; trong ngày mai.</p><details><summary>Xem chi tiết</summary><p class="src">Nguồn: Jagran Josh — <a href="https://www.jagranjosh.com/articles/school-assembly-news-headlines-november-9-2026-top-national-world-education-business-news-1800018852-1" target="_blank" rel="noopener">Đọc bài gốc</a></p></details></article>
+</div></div>
+</section>
+</div>
+<div id="tab-bank" class="tabpane bank" hidden>
+<div class="banknumbers">
+<div><b>4,5%</b><span>Lãi suất trúng thầu OMO</span></div>
+<div><b>4,51%</b><span>Liên NH qua đêm 05/11</span></div>
+<div><b>9,1%</b><span>VPBank: cộng thêm tối đa</span></div>
+<div><b>5,5%</b><span>Big4: cao nhất tại quầy</span></div>
+<div><b>3,75–4,00%</b><span>Lãi suất Fed (tăng T12 ~77%)</span></div>
+<div><b>+12,27%</b><span>Tín dụng toàn hệ thống (cuối T10)</span></div>
+<div><b>499,24 tỷ USD</b><span>Xuất khẩu 10 tháng (+27,5%)</span></div>
+<div><b>511,31 tỷ USD</b><span>Nhập khẩu 10 tháng (+37,4%)</span></div>
+<div><b>~83 tỷ USD</b><span>Dự trữ ngoại hối (ước tính)</span></div>
+<div><b>75,4%</b><span>Đầu tư công: 708.570 tỷ đ (10T)</span></div>
+</div>
+<p class="banknote">Cập nhật 09/11/2026 (khung sáng) • Lãi suất huy động theo biểu niêm yết trên website các ngân hàng • OMO / liên ngân hàng theo số liệu SBV và các trang chính thức • Chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</p>
+
+<h2 class="sec bank">TIN NÓNG NGÂN HÀNG — ĐƯỢC THẢO LUẬN NHIỀU NHẤT</h2>
+<article><h4>1. Hoán đổi ngoại tệ 182 ngày 2 tỷ USD chính thức có hiệu lực hôm nay 09/11</h4><p>Phiên hoán đổi ngoại tệ USD/VND kỳ hạn 182 ngày của NHNN chính thức có hiệu lực hôm nay 09/11 (ngày giá trị): NHNN mua USD giao ngay 24.399 đ/USD, tối đa 2 tỷ USD, đáo hạn 10/05/2027; bán kỳ hạn 24.704 đ/USD (chênh 305 đồng, tương đương ~2,51%/năm) — bơm gần 48.800 tỷ đồng thanh khoản dài hạn vào hệ thống. Đây là lần đầu hoán đổi kỳ hạn 6 tháng trong năm 2026 (7 lần trước chỉ 3–21 ngày); mỗi ngân hàng tối đa 1,6 tỷ USD.</p><p class="src">Nguồn: Thời báo Ngân hàng, Investify, Thị trường Tài chính Tiền tệ</p></article>
+<article><h4>2. SBV ban hành Quyết định 2409/QĐ-NHNN — kế hoạch hành động ngành ngân hàng</h4><p>Thống đốc NHNN đã ký ban hành Quyết định số 2409/QĐ-NHNN về Kế hoạch hành động của ngành Ngân hàng nhằm triển khai Đề án &ldquo;Tiếp tục hiện đại hóa hệ thống ngân hàng, xử lý các tổ chức tín dụng yếu kém, tăng cường khả năng tiếp cận vốn cho doanh nghiệp, nhất là doanh nghiệp nhỏ và vừa&rdquo;. Kế hoạch xác định triển khai đồng bộ hai nhóm giải pháp (trực tiếp và hỗ trợ) để đẩy nhanh xử lý các tổ chức tín dụng yếu kém, nâng cao năng lực tài chính, quản trị và khả năng chống chịu của hệ thống.</p><p class="src">Nguồn: Đầu tư Chứng khoán</p></article>
+<article><h4>3. Tọa đàm &ldquo;Giảm lãi suất&rdquo; 14h hôm nay 9/11: bàn dư địa hạ lãi suất hỗ trợ tăng trưởng 2 con số</h4><p>Tạp chí Kinh tế Việt Nam/VnEconomy tổ chức tọa đàm &ldquo;Giảm lãi suất: Dư địa và giải pháp hỗ trợ tăng trưởng 2 con số&rdquo; lúc 14h hôm nay 9/11, với các chuyên gia từ Hiệp hội Ngân hàng Việt Nam, Hiệp hội Thị trường Trái phiếu Việt Nam và VAMC. Dù gần 30 ngân hàng đã công bố giảm lãi suất sau chỉ đạo của Chính phủ và NHNN, mặt bằng lãi suất mới chỉ giảm rời rạc, chưa đạt mục tiêu giảm 1,5–2%; lãi vay mới bình quân cuối tháng 10 còn 8,88%/năm.</p><p class="src">Nguồn: VnEconomy</p></article>
+<article><h4>4. NHNN cảnh báo xử lý ngân hàng không giảm lãi suất</h4><p>Phó Thống đốc Phạm Thanh Hà khẳng định tại họp báo Chính phủ 04/11: NHNN sẽ xử lý các ngân hàng không thực hiện chỉ đạo giảm lãi suất; tiếp tục yêu cầu giảm lãi suất huy động và cho vay. Cả 46/46 ngân hàng đã giảm lãi suất huy động 0,5–0,7 điểm %; lãi vay mới bình quân cuối tháng 10 còn 8,88%/năm (giảm 0,2–0,5 điểm %).</p><p class="src">Nguồn: Người Quan sát, Index.vn, PetroTimes</p></article>
+<article><h4>5. OMO phiên cuối tuần bơm mạnh: NHNN phát hành 44.977 tỷ đồng phiên 06/11</h4><p>NHNN tăng mạnh phát hành OMO phiên cuối tuần 06/11 lên 44.976,78 tỷ đồng — chiếm khoảng 73% tổng phát hành cả tuần (61.578,84 tỷ) và gấp hơn 8 lần phiên trước; lãi suất trúng thầu giữ 4,5%/năm cho các kỳ hạn 7, 14, 35 và 91 ngày. Cả tuần 02–06/11, khối lượng vay qua đêm liên ngân hàng vượt 1 triệu tỷ đồng, cho thấy nhu cầu thanh khoản ngắn hạn rất cao trước mùa cao điểm cuối năm.</p><p class="src">Nguồn: Stockbiz</p></article>
+<article><h4>6. Tiền gửi 28 ngân hàng tăng 10,6% sau 9 tháng; tín dụng vượt 20,87 triệu tỷ đồng</h4><p>Tiền gửi khách hàng tại 28 ngân hàng tăng 10,6% trong 9 tháng đầu năm 2026, đạt khoảng 14,38 triệu tỷ đồng tính đến 30/9/2026; quý III là quý tăng mạnh nhất (+4,9%). BIDV dẫn đầu với 2,36 triệu tỷ đồng; HDBank tăng 3 bậc lên hạng 7 nhờ tiền gửi tăng 26,5%; NCB có tốc độ tăng nhanh nhất 45,4%. Dư nợ tín dụng toàn hệ thống vượt 20,87 triệu tỷ đồng cuối tháng 10, tăng khoảng 12,27% so với cuối năm 2025.</p><p class="src">Nguồn: CafeF, VnInfor</p></article>
+<article><h4>7. Lãi vay mới bình quân giảm còn 8,88%/năm; Vietcombank được chấp thuận tăng vốn điều lệ</h4><p>Lãi suất cho vay phát sinh mới bình quân cuối tháng 10 giảm 0,2–0,5 điểm % còn 8,88%/năm; Techcombank giảm thêm 0,4 điểm % lãi suất Phát Lộc Online (kỳ hạn 6–11 tháng còn 6,05%/năm, 12 tháng 6,25%/năm). Vietcombank được chấp thuận phương án tăng vốn điều lệ — củng cố bộ đệm vốn trong bối cảnh tín dụng toàn hệ thống đã tăng 12,27% từ đầu năm.</p><p class="src">Nguồn: Index.vn, Tạp chí Kinh tế Tài chính</p></article>
+<article><h4>8. VPBank cộng thêm tới 2,2%/năm lãi suất tiền gửi, cao nhất 9,1%/năm</h4><p>Từ 6/11, VPBank áp dụng mã khuyến mại cho khách gửi tiết kiệm online từ 10 triệu đồng: gửi dưới 10 tỷ đồng được cộng thêm 2,2%/năm, từ 10 tỷ đồng cộng 2%/năm (kỳ hạn 6–12 tháng, đến 11/11), đưa mức hưởng tối đa lên 9,1%/năm — cao hơn đáng kể lãi suất niêm yết kỳ hạn dài 15–18 tháng (7,4%/năm). Ngoài ra VPBank cộng thêm 1%/năm cho tiền gửi định kỳ 5 triệu–1 tỷ đồng, kỳ hạn 1–36 tháng, đến 30/11/2026.</p><p class="src">Nguồn: Kenh14</p></article>
+<article><h4>9. Gần 17 tỷ cổ phiếu ngân hàng đưa ra thị trường từ đầu năm</h4><p>Tổng số cổ phiếu lưu hành của 28 ngân hàng trên HOSE, HNX và UPCoM đạt gần 110 tỷ đơn vị (+18% so với cuối năm 2025), chủ yếu qua trả cổ tức bằng cổ phiếu và phát hành thêm để tăng vốn. Techcombank +3,54 tỷ cổ phiếu (cổ tức 50%), VPBank +2,07 tỷ, MB +2,01 tỷ — cả ba đều vượt mốc 10 tỷ đơn vị lưu hành; Techcombank hiện là ngân hàng có số cổ phiếu lưu hành lớn nhất nhóm. Vietcombank, VietinBank, LPBank, Sacombank, Eximbank và Saigonbank không thay đổi số lượng lưu hành.</p><p class="src">Nguồn: Kinh tế Mới 24h</p></article>
+<article><h4>10. Chứng khoán VPBank phát hành 843,75 triệu cổ phiếu thưởng, tỷ lệ 45%</h4><p>Chứng khoán VPBank (VPX, HoSE) chốt phương án phát hành 843,75 triệu cổ phiếu thưởng từ nguồn vốn chủ sở hữu (tỷ lệ 100:45), thực hiện trong năm 2026 theo quyết định của HĐQT; phương án đã được cổ đông thông qua bằng lấy ý kiến bằng văn bản (kết thúc 04/11). LNTT quý III đạt gần 843 tỷ đồng; lũy kế 9 tháng doanh thu hoạt động 10.544 tỷ đồng (+93% so với cùng kỳ); tổng tài sản 30/09 đạt hơn 83.312 tỷ đồng (+14% so với đầu năm).</p><p class="src">Nguồn: Vietnam.vn</p></article>
+
+<h2 class="sec bank">LÃI SUẤT HUY ĐỘNG — XẾP TỪ CAO XUỐNG THẤP (09/11/2026)</h2>
+<div class="tblwrap"><table>
+<tr><th>Ngân hàng</th><th>6 tháng</th><th>12 tháng</th><th>18 tháng</th><th>Cao nhất</th></tr>
+<tr class="grp"><td colspan="5">Nhóm thương mại cổ phần — trực tuyến</td></tr>
+<tr><td><b>VPBank</b></td><td>6,6%</td><td>6,7%</td><td><b>7,4%</b></td><td><b>7,4%</b></td></tr>
+<tr><td><b>Sacombank</b></td><td>6,7%</td><td>7,0%</td><td>7,0%</td><td><b>7,0%</b></td></tr>
+<tr><td>MBV</td><td>6,5%</td><td>7,0%</td><td>7,0%</td><td><b>7,0%</b></td></tr>
+<tr><td>PGBank</td><td>6,9%</td><td>7,0%</td><td>6,8%</td><td><b>7,0%</b></td></tr>
+<tr><td>VIB</td><td>5,7%</td><td>7,0%</td><td>5,9%</td><td><b>7,0%</b></td></tr>
+<tr><td><b>Techcombank (TCB)</b></td><td>6,05%</td><td>6,25%</td><td>5,35%</td><td><b>6,25%</b></td></tr>
+<tr><td><b>MB (MBB)</b></td><td>5,3%</td><td>5,85%</td><td>5,85%</td><td><b>5,85%</b></td></tr>
+<tr><td><b>HDBank (HDB)</b></td><td>5,0%</td><td>5,3%</td><td>5,6%</td><td><b>5,6%</b></td></tr>
+<tr><td><b>ACB</b></td><td>4,4%</td><td>5,2%</td><td>5,2%</td><td><b>5,2%</b></td></tr>
+<tr class="grp"><td colspan="5">Nhóm quốc doanh</td></tr>
+<tr><td>Agribank, Vietcombank, BIDV, VietinBank (trực tuyến)</td><td>6,6%</td><td>6,8%</td><td>6,8%</td><td><b>6,8%</b></td></tr>
+<tr><td>Agribank (tại quầy)</td><td>3,5%</td><td>5,4%</td><td>5,4%</td><td><b>5,5%</b></td></tr>
+<tr><td>Vietcombank (tại quầy)</td><td>3,0%</td><td>5,4%</td><td>—</td><td><b>5,5%</b></td></tr>
+<tr><td>BIDV (tại quầy)</td><td>3,0%</td><td>5,4%</td><td>5,4%</td><td><b>5,5%</b></td></tr>
+<tr><td>VietinBank (tại quầy)</td><td>3,0%</td><td>5,4%</td><td>5,4%</td><td><b>5,5%</b></td></tr>
+</table></div>
+<div class="verdict">
+<h4>Lưu ý về bảng lãi suất</h4>
+<p>Bảng xếp từ cao xuống thấp theo mức cao nhất nên nhóm thương mại cổ phần đứng trước, nhóm quốc doanh đứng sau. Agribank dẫn đầu nhóm quốc doanh ở kỳ hạn ngắn (1–2 tháng 2,6%; 3–5 tháng 2,9%; 6–11 tháng 3,5%). Lưu ý mức ưu đãi có điều kiện: VPBank <span class="hl-green">cộng thêm 2,2 điểm %</span> cho kỳ hạn 6–12 tháng (từ 10 triệu đến dưới 10 tỷ đồng), đưa mức hưởng tối đa <span class="hl-green">lên 9,1%/năm</span> (khoản từ 10 tỷ đồng: cộng 2%, tối đa 9,1%/năm; chương trình chỉ đến 11/11); Techcombank <span class="hl-green">cộng thêm 1,7 điểm %</span> cho khoản gửi đầu tiên trong tháng (kỳ hạn 3/6/12 tháng, không rút trước hạn), tối đa <span class="hl-green">8,6%/năm kỳ hạn 12 tháng</span> và <span class="hl-green">8,4%/năm kỳ hạn 6 tháng</span>; MB áp dụng <span class="hl-green">8,2%/năm</span> cho gửi online cuối tuần và gửi từ 100 triệu đồng kỳ hạn 12 tháng (chương trình kỷ niệm 32 năm, 02–30/11); PVcomBank niêm yết <span class="hl-green">10%/năm</span> cho kỳ hạn 12–13 tháng nhưng yêu cầu số tiền gửi rất lớn (hàng trăm đến hàng nghìn tỷ đồng). Techcombank Phát Lộc Online vừa giảm 0,4 điểm % (lần thứ 2 trong chưa đầy 2 tuần); Sacombank niêm yết 24 tháng 7,3%. Đơn vị %/năm, khách hàng cá nhân, lĩnh lãi cuối kỳ.</p>
+</div>
+
+<h2 class="sec bank">CHÍNH SÁCH NHNN — OMO, LIÊN NGÂN HÀNG, NGOẠI HỐI (CẬP NHẬT HÀNG NGÀY)</h2>
+<h3 class="cat bankcat">Nghiệp vụ thị trường mở (OMO) — kênh cầm cố giấy tờ có giá</h3>
+<div class="tblwrap"><table>
+<tr><th>Phiên</th><th>Chào thầu / trúng thầu</th><th>Bơm (+) / hút (−) ròng</th><th>Lưu hành</th><th>Lãi suất</th></tr>
+<tr><td>02/11</td><td>4.655 tỷ (1.655 tỷ 7 ngày + 3.000 tỷ 35 ngày), trúng hết; đáo hạn 3.662 tỷ</td><td><b>+993 tỷ</b></td><td>124.220 tỷ</td><td>4,5%</td></tr>
+<tr><td>03/11</td><td>3.226 tỷ trúng thầu; đáo hạn 11.065 tỷ</td><td><b>−7.839 tỷ</b></td><td>116.381 tỷ</td><td>4,5%</td></tr>
+<tr><td>04/11</td><td>Chi tiết chào thầu chưa công bố</td><td><b>−7.143 tỷ</b></td><td>—</td><td>4,5%</td></tr>
+<tr><td>05/11</td><td>Chi tiết chào thầu chưa công bố</td><td><b>−3.646 tỷ</b></td><td>—</td><td>4,5%</td></tr>
+<tr><td>06/11</td><td><b>44.977 tỷ</b> trúng thầu (gấp 8 lần phiên trước); cả tuần 02–06/11 phát hành 61.579 tỷ</td><td>—</td><td>—</td><td>4,5%</td></tr>
+<tr><td>Tháng 10</td><td>Tuần 26–30/10 chào 86.000 tỷ, bơm ròng 28.161,7 tỷ</td><td><b>−27.200 tỷ</b> (cả tháng)</td><td>—</td><td>4,5%</td></tr>
+</table></div>
+<div class="verdict">
+<h4>Lưu ý về OMO</h4>
+<p>Ba phiên liên tiếp 03–05/11 NHNN <b>hút ròng tổng cộng 18.628 tỷ đồng</b>. NHNN không chào thầu tín phiếu trong các phiên 02–05/11. Lãi suất trúng thầu OMO <b>giữ 4,5%/năm</b> — NHNN điều tiết bằng khối lượng và kỳ hạn, <b>chưa thay đổi mức lãi suất</b>. Phiên OMO 06/11: NHNN <b>phát hành 44.977 tỷ đồng</b> — chiếm khoảng 73% tổng phát hành cả tuần (61.579 tỷ) và gấp hơn 8 lần phiên trước; số liệu bơm/hút ròng phiên này chưa công bố. Phiên OMO đầu tuần 09/11 diễn ra trong ngày — số liệu sẽ cập nhật ở bản tin trưa. Lãi suất trúng thầu OMO <b>giữ 4,5%/năm</b> cho mọi kỳ hạn (7, 14, 35, 91 ngày). Lãi suất điều hành (đã kiểm chứng): lãi suất <b>tái cấp vốn 4,5%/năm</b>, <b>tái chiết khấu 3,0%/năm</b>, cho vay qua đêm trong thanh toán điện tử liên ngân hàng <b>5,0%/năm</b> — theo <b>Quyết định 1123/QĐ-NHNN</b> ngày 16/6/2023, NHNN xác nhận giữ nguyên các mức lãi suất điều hành tại họp báo quý III/2026 ngày 07/10/2026. Ghi riêng hai công cụ dù cùng số 4,5%: tái cấp vốn 4,5% (QĐ 1123) và lãi suất trúng thầu OMO 4,5% — không gộp chung.</p>
+</div>
+<h3 class="cat bankcat">Lãi suất liên ngân hàng VND — chốt 05/11/2026</h3>
+<div class="tblwrap"><table>
+<tr><th>Phiên</th><th>Qua đêm</th><th>1 tuần</th><th>2 tuần</th><th>1 tháng</th></tr>
+<tr><td><b>05/11</b></td><td><b>4,51%</b></td><td><b>5,0%</b></td><td><b>5,1%</b></td><td><b>5,27%</b></td></tr>
+<tr><td>03/11</td><td>3,81%</td><td>4,26%</td><td>5,02%</td><td>4,85%</td></tr>
+</table></div>
+<div class="verdict">
+<h4>Bối cảnh lãi suất liên ngân hàng</h4>
+<p>Lãi suất qua đêm đã <span class="hl-green">hạ nhiệt mạnh từ 5,79% (30/10) xuống 3,81% (03/11)</span>, rồi <b>4,51% (05/11)</b> — giảm 1,28 điểm % so với cuối tháng 10; kỳ hạn 1 tuần 5,0%, 2 tuần 5,1%, 1 tháng 5,27%, 3 tháng 6,6% (đều đã hạ so với 30/10). Khối lượng vay qua đêm liên ngân hàng tuần 02–06/11 vượt 1 triệu tỷ đồng, cho thấy nhu cầu thanh khoản ngắn hạn rất cao trước mùa cao điểm cuối năm. Đầu tháng 2/2026 lãi suất qua đêm từng <span class="hl-red">tiến sát 20%/năm</span> trước khi <span class="hl-green">hạ nhiệt</span> nhờ OMO và hoán đổi ngoại tệ.</p>
+</div>
+<h3 class="cat bankcat">Các công cụ khác của NHNN</h3>
+<article><h4>Hoán đổi ngoại tệ USD/VND kỳ hạn 182 ngày — đã thực hiện 06/11</h4><p>Phiên hoán đổi đã thực hiện ngày 06/11, chính thức có hiệu lực hôm nay 09/11 (ngày giá trị): NHNN mua USD giao ngay 24.399 đ/USD, tối đa 2 tỷ USD, ngày giá trị 09/11, đáo hạn 10/05/2027; bán kỳ hạn 24.704 đ/USD — bơm gần 48.800 tỷ đồng, chuyển từ hỗ trợ ngắn hạn sang hỗ trợ dài hơi cho các tổ chức tín dụng có dư nợ vay nước ngoài trung/dài hạn hoặc trái phiếu quốc tế còn lại từ 12 tháng trở lên.</p><p class="src">Nguồn: PetroTimes, Thị trường Tài chính Tiền tệ</p></article>
+<article><h4>Công văn 9736/NHNN-CSTT (21/10): ép giảm lãi suất huy động</h4><p>Lãi suất tiền gửi bình quân của giao dịch phát sinh mới, kỳ hạn từ 6 tháng trở lên, phải giảm tối thiểu 0,5 điểm % so với kỳ báo cáo 11–20/10. Cả 46/46 ngân hàng đã giảm 0,5–0,7 điểm % lãi suất huy động; lãi suất cho vay mới giảm 0,2–0,5 điểm %.</p><p class="src">Nguồn: Kinh tế Chứng khoán</p></article>
+<article><h4>Thống đốc Phạm Đức Ấn — phiên thảo luận Quốc hội 31/10</h4><p>NHNN đang hỗ trợ thanh khoản cho các tổ chức tín dụng thông qua tái cấp vốn và nghiệp vụ thị trường mở. Tổng dư nợ tín dụng toàn hệ thống hơn 20,87 triệu tỷ đồng, tăng khoảng 12,27% so với cuối năm 2025.</p><p class="src">Nguồn: Kinh tế Chứng khoán, Người Quan Sát</p></article>
+
+<h2 class="sec bank">TÁC ĐỘNG ĐẾN TỶ GIÁ USD/VND &amp; LÃI SUẤT CHO VAY — 5 YẾU TỐ MỚI NHẤT (09/11/2026)</h2>
+<p class="banknote">Đánh giá tác động từ tin tức và chính sách mới, không phải lý thuyết suông. Quy ước: <span class="ok">✅ Thuận lợi</span> = hỗ trợ VND vững giá / lãi suất cho vay có dư địa giảm; <span class="bad">❌ Bất lợi</span> = gây áp lực mất giá VND / lãi suất cho vay khó giảm. Tỷ giá trung tâm chốt tuần 25.615 đ/USD; giá bán USD tại ngân hàng thương mại dưới 26.000 đ/USD, thấp nhất khoảng 1 năm rưỡi. <b>MỚI sáng nay:</b> Trump nói khó có khả năng tấn công mới vào Iran nếu đàm phán tiến triển, nhưng Mỹ lập lực lượng đặc nhiệm chặn tuyến đường bộ vào Iran và Israel tuyên bố &ldquo;nhiệm vụ chưa hoàn thành&rdquo; — dầu Brent vẫn quanh 98,3 USD/thùng; hoán đổi ngoại tệ 182 ngày 2 tỷ USD của NHNN chính thức có hiệu lực hôm nay 09/11, bơm gần 48.800 tỷ đồng thanh khoản dài hạn; COP31 khai mạc hôm nay 9/11 tại Antalya; đồng USD vẫn mạnh (DXY 102,28, lợi suất TPCP Mỹ 10 năm 4,86%); vàng thế giới ~4.072 USD/ounce, Bitcoin ~75.800 USD; CPI Mỹ tháng 10 công bố ngày mai 10/11.</p>
+<div class="tblwrap"><table>
+<tr><th>Yếu tố</th><th>Diễn biến mới nhất (số liệu)</th><th>Tỷ giá USD/VND</th><th>Lãi suất cho vay VND</th></tr>
+<tr><td><b>1. Cán cân thương mại</b></td><td>Tháng 10 xuất siêu <b>7,31 tỷ USD</b> (tháng thứ 2 liên tiếp, sau 1,30 tỷ tháng 9); nhưng lũy kế 10 tháng vẫn <b>nhập siêu 12,07 tỷ USD</b>, đảo chiều so với xuất siêu 19,49 tỷ cùng kỳ 2025. Xuất khẩu 10 tháng 499,24 tỷ USD (+27,5%); nhập khẩu 511,31 tỷ (+37,4%).</td><td><span class="bad">❌ Bất lợi</span> — lũy kế nhập siêu nghĩa là cầu USD trả tiền nhập khẩu lớn hơn nguồn USD từ xuất khẩu, nguồn cung ngoại tệ từ thương mại suy yếu; điểm sáng là xuất siêu 2 tháng liên tiếp đang thu hẹp dần nhập siêu.</td><td>— Trung tính: ít tác động trực tiếp tới lãi suất cho vay.</td></tr>
+<tr><td><b>2. Can thiệp ngoại hối của NHNN</b></td><td>Ngày 06/11 NHNN <b>đã thực hiện</b> hoán đổi ngoại tệ kỳ hạn <b>182 ngày</b>: mua USD giao ngay <b>24.399 đ/USD, tối đa 2 tỷ USD</b> — bơm gần <b>48.800 tỷ đồng</b> thanh khoản dài hạn; ngày giá trị 09/11, đáo hạn 10/05/2027; bán kỳ hạn <b>24.704 đ/USD</b> (chênh 305 đồng ≈ 2,51%/năm). Lần đầu kỳ hạn 6 tháng trong năm 2026.</td><td><span class="bad">❌ Bất lợi</span> — NHNN mua USD và trả bằng VND làm tăng cung tiền đồng, tạo áp lực lên tỷ giá; bù lại NHNN tích thêm dự trữ để can thiệp khi cần.</td><td><span class="ok">✅ Thuận lợi</span> — bổ sung thanh khoản dài hạn giúp hạ nhiệt lãi suất liên ngân hàng, tạo dư địa giảm lãi suất cho vay.</td></tr>
+<tr><td><b>3. OMO &amp; thanh khoản liên ngân hàng</b></td><td>Ba phiên 03–05/11 NHNN <b>hút ròng tổng cộng 18.628 tỷ đồng</b>, nhưng phiên cuối tuần 06/11 NHNN <b>phát hành mạnh 44.977 tỷ đồng</b> (73% tổng phát hành cả tuần 61.579 tỷ); lãi suất liên ngân hàng qua đêm hạ từ <b>5,79%</b> (30/10) xuống 3,81% (03/11), rồi <b>4,51%</b> (05/11); OMO giữ 4,5%.</td><td><span class="ok">✅ Thuận lợi</span> — lãi suất VND vẫn cao hơn USD, giữ chân tiền đồng, dù đã hạ nhiệt từ 6,0%.</td><td><span class="bad">❌ Bất lợi</span> — chi phí vốn vẫn cao: lãi vay mới bình quân cuối tháng 10 còn <b>8,88%/năm</b>, chỉ giảm 0,2–0,5 điểm % dù 46/46 ngân hàng đã giảm lãi suất huy động 0,5–0,7 điểm %; tuy nhiên áp lực đã <span class="hl-green">mềm đi khi lãi qua đêm hạ về 4,5%</span> (từ 6,0% cuối tháng 10) và <span class="hl-green">hơn 20 ngân hàng đã công bố chương trình giảm lãi vay 1,5–2%/năm</span>.</td></tr>
+<tr><td><b>4. Lạm phát &amp; thị trường lao động</b></td><td>CPI tháng 10 tăng <b>5,09%</b> so với cùng kỳ; CPI 10 tháng <b>+4,57%</b>. Thất nghiệp quý III chỉ <b>2,22%</b>, thu nhập bình quân 9,2 triệu đồng/tháng (+9,9% so với cùng kỳ) — thị trường lao động nóng. Tín dụng toàn hệ thống tăng <b>12,27%</b> so với cuối 2025.</td><td><span class="bad">❌ Bất lợi</span> — lạm phát trên 5% bào mòn giá trị VND, thu hẹp dư địa nới lỏng tiền tệ để hỗ trợ tỷ giá.</td><td><span class="bad">❌ Bất lợi</span> — CPI cao + tín dụng tăng nóng khiến NHNN khó hạ thêm lãi suất điều hành; lãi suất cho vay khó giảm thêm trong ngắn hạn.</td></tr>
+<tr><td><b>5. Dòng vốn FDI &amp; dự trữ ngoại hối</b></td><td>FDI thực hiện 10 tháng <b>24,08 tỷ USD (+13,1%, cao nhất 5 năm)</b>; FDI đăng ký 54,85 tỷ USD (+74%, cao nhất từ 2009). Dự trữ ngoại hối khoảng <b>83 tỷ USD</b> (ước tính Standard Chartered), thấp hơn mức ~87,6 tỷ hồi 18/06/2026; chỉ tương đương <b>~2 tháng nhập khẩu</b>, dưới chuẩn 3 tháng; thấp xa đỉnh 111,8 tỷ USD (01/2022).</td><td><span class="ok">✅ Thuận lợi</span> từ FDI — nguồn cung USD ổn định, hỗ trợ VND. <span class="bad">❌ Bất lợi</span> từ dự trữ — đệm can thiệp mỏng, NHNN khó bán USD mạnh tay nếu tỷ giá căng cuối năm.</td><td><span class="ok">✅ Thuận lợi</span> — dòng vốn ngoại tệ vào giúp thanh khoản hệ thống, hỗ trợ tăng trưởng tín dụng mà không phải bơm tiền quá nhiều.</td></tr>
+</table></div>
+<div class="verdict">
+<h4>Nhận định tổng kết (09/11/2026)</h4>
+<p><b>Tỷ giá USD/VND:</b> <b>2 mặt thuận lợi</b> (lãi suất VND còn cao — qua đêm 4,51%, dòng FDI) đối đầu <b>4 mặt bất lợi</b> (nhập siêu lũy kế, NHNN mua USD bơm VND, lạm phát trên 5%, dự trữ mỏng) — nay cộng thêm <span class="hl-red">đồng USD mạnh lên sau báo cáo việc làm Mỹ tháng 10 (+165.000, xác suất Fed tăng lãi suất tháng 12 lên ~77%)</span> → <span class="hl-red">VND chịu áp lực mất giá nhẹ về cuối năm</span>. Điểm đỡ: <span class="hl-green">dầu Brent quanh 98,3 USD/thùng sau khi giảm mạnh trong tuần, giảm áp lực nhập khẩu năng lượng và lạm phát</span>; <span class="hl-green">hoán đổi ngoại tệ 182 ngày 2 tỷ USD chính thức có hiệu lực hôm nay 09/11, bơm gần 48.800 tỷ đồng thanh khoản dài hạn</span>; <span class="hl-green">Trump phát tín hiệu khó tấn công mới vào Iran nếu đàm phán tiến triển, dù Israel tuyên bố &ldquo;nhiệm vụ chưa hoàn thành&rdquo;</span>; <span class="hl-green">COP31 khai mạc hôm nay 9/11, kỳ vọng tiến triển về tài chính khí hậu</span>; KBSV dự báo cuối năm khoảng 26.298 đ/USD; VCBS dự báo <span class="hl-red">VND mất giá 1–1,5% trong cả năm 2026</span>. <span class="hl-green">Tỷ giá đang ổn định dưới 26.000 đ/USD</span> và <span class="hl-green">NHNN còn đủ công cụ</span> (OMO, hoán đổi 182 ngày, dự trữ ~83 tỷ USD).</p>
+<p><b>Lãi suất cho vay VND:</b> <b>2 thuận lợi</b> đối đầu <b>2 bất lợi</b>, <b>1 trung tính</b> → <span class="hl-red">khó giảm sâu thêm trong ngắn hạn</span>; mức giảm thêm chủ yếu <span class="hl-green">0,2–0,5 điểm % ở khoản vay mới</span>, nhờ chỉ đạo của NHNN và thanh khoản từ hoán đổi ngoại tệ — lãi vay mới bình quân cuối tháng 10 còn <b>8,88%/năm</b>, chưa có dư địa hạ lãi suất điều hành khi CPI còn trên 5%. Chiều nay 9/11, tọa đàm &ldquo;Giảm lãi suất&rdquo; của VnEconomy (14h) sẽ bàn dư địa và giải pháp hạ nhiệt lãi suất hỗ trợ tăng trưởng 2 con số.</p>
+</div>
+
+<h2 class="sec bank">HIỆU QUẢ HOẠT ĐỘNG — CHO VAY (XẾP GIẢM DẦN THEO QUY MÔ CHO VAY, 30/09/2026)</h2>
+<div class="tblwrap"><table>
+<tr><th>Ngân hàng</th><th>LNTT quý III (tỷ đ)</th><th>LNTT 9 tháng (tỷ đ)</th><th>Cho vay khách hàng (tỷ đ)</th><th>Tăng trưởng cho vay</th></tr>
+<tr class="grp"><td colspan="5">Nhóm quốc doanh</td></tr>
+<tr><td><b>BIDV (BID)</b></td><td>10.579 (+39,3%)</td><td>29.483 (+24,8%)</td><td><b>2.561.795</b></td><td>+8,0%</td></tr>
+<tr><td><b>VietinBank (CTG)</b></td><td>13.689 (+29,0%)</td><td>39.557 (+33,9%)</td><td><b>2.141.458</b></td><td>+7,5%</td></tr>
+<tr><td><b>Vietcombank (VCB)</b></td><td>11.218 (−0,2%)</td><td>40.440 (+22,1%)</td><td><b>1.816.093</b></td><td>+8,5%</td></tr>
+<tr class="grp"><td colspan="5">Nhóm thương mại cổ phần</td></tr>
+<tr><td><b>MB (MBB)</b></td><td>10.330 (+42,5%)</td><td>30.518 (+31,9%)</td><td><b>1.280.000</b></td><td>+18,8%</td></tr>
+<tr><td><b>VPBank (VPB)</b></td><td>11.031 (+20,3%)</td><td>29.911 (+46,7%)</td><td><b>1.212.144</b></td><td>+28,4%</td></tr>
+<tr><td><b>Techcombank (TCB)</b></td><td>10.375 (+25,8%)</td><td>28.915 (+23,7%)</td><td><b>868.473</b></td><td>+13,1%</td></tr>
+<tr><td><b>ACB</b></td><td>5.879 (+9,2%)</td><td>16.614 (+3,4%)</td><td><b>765.614</b></td><td>+11,5%</td></tr>
+<tr><td><b>Sacombank (STB)</b></td><td>—</td><td>—</td><td><b>700.347</b></td><td>+11,8%</td></tr>
+<tr><td><b>SHB</b></td><td>5.166 (+57,1%)</td><td>14.309 (+17,0%)</td><td><b>670.302</b></td><td>+9,0%</td></tr>
+<tr><td><b>HDBank</b></td><td>5.176 (+9,3%)</td><td>—</td><td>—</td><td>—</td></tr>
+</table></div>
+<div class="verdict">
+<h4>Điểm nhấn quý III</h4>
+<p><span class="hl-green">VietinBank soán ngôi Vietcombank để dẫn đầu lợi nhuận quý</span>; <span class="hl-green">VPBank vượt MB thành ngân hàng TMCP tư nhân lãi cao nhất quý</span>; <span class="hl-green">Techcombank đạt mức lợi nhuận quý cao nhất từ trước đến nay</span>. Về quy mô cho vay, <span class="hl-green">MB và VPBank là 2 nhà băng tư nhân đầu tiên vượt mốc 1 triệu tỷ đồng</span>; <span class="hl-green">VPBank dẫn đầu toàn ngành về mức tăng tuyệt đối (+268.242 tỷ đồng)</span>. Tiền gửi khách hàng 30/09: BIDV 2.360.525 tỷ <span class="hl-green">(+6,2%)</span>, VietinBank 1.944.301 tỷ <span class="hl-green">(+8,4%)</span>, Vietcombank 1.781.703 tỷ <span class="hl-green">(+6,5%)</span> — tiền gửi <span class="hl-red">tăng chậm hơn cho vay</span> ở BIDV và Vietcombank. Toàn hệ thống: dư nợ tín dụng <b>vượt 20,87 triệu tỷ đồng cuối tháng 10</b>, <span class="hl-green">tăng khoảng 12,27%</span> so với cuối năm 2025 (số liệu cập nhật từ 20,75 triệu tỷ, +11,59% tại 30/09); tỷ lệ cho vay/huy động nhóm quốc doanh 99,3%. Nợ xấu 30/09: Vietcombank 0,71% (bao phủ 243,2%), VietinBank 1,20% (160,4%), BIDV 1,85% (73,4%). Theo SSI Research, 13 ngân hàng lớn đạt LNTT quý III 89,1 nghìn tỷ đồng (+18,9% so với cùng kỳ); <span class="hl-red">nợ xấu hình thành ròng quý III hơn 65.500 tỷ đồng — cao nhất từ 2022</span>; tỷ lệ bao phủ nợ xấu giảm còn 74,2%. SeABank: LNTT quý III 1.315 tỷ đồng (+37,5%) nhưng 9 tháng chỉ 3.940 tỷ (−41,5%), đã hạ mục tiêu LNTT 2026 xuống 6.008 tỷ đồng. <span class="hl-green">Hơn 20 ngân hàng đã công bố chương trình tín dụng ưu đãi giảm lãi vay 1,5–2%/năm</span> cho sản xuất, kinh doanh và các lĩnh vực ưu tiên (Agribank 425.000 tỷ đồng).</p>
+</div>
+
+<h2 class="sec world">TIN THẾ GIỚI VỀ CHÍNH SÁCH — LÃI SUẤT NGÂN HÀNG TRUNG ƯƠNG</h2>
+<div class="tblwrap"><table>
+<tr><th>Ngân hàng trung ương</th><th>Lãi suất</th><th>Diễn biến mới nhất</th><th>Họp tiếp theo</th></tr>
+<tr><td><b>Fed (Mỹ)</b></td><td><b>3,75–4,00%</b></td><td>NFP tháng 10 +165.000 vượt xa kỳ vọng; thị trường định giá ~77% khả năng tăng lãi suất; Chủ tịch Fed New York: lạm phát “tuyệt đối quá cao”</td><td>09/12/2026</td></tr>
+<tr><td><b>ECB (Eurozone)</b></td><td><b>2,50%</b> (tiền gửi)</td><td>Giữ nguyên 29/10; lãi suất tái cấp vốn chính 2,65%; lạm phát Eurozone 4,0%; thị trường định giá ~78% khả năng tăng lãi suất</td><td>17/12/2026</td></tr>
+<tr><td><b>BoE (Anh)</b></td><td><b>4,00%</b></td><td>Tăng 0,25 điểm % ngày 05/11 — lần tăng đầu tiên sau 3 năm, lạm phát Anh 3,5%</td><td>17/12/2026</td></tr>
+<tr><td><b>RBA (Úc)</b></td><td><b>4,85%</b></td><td>Tăng 0,25 điểm % ngày 03/11 (hiệu lực 04/11) — lần tăng thứ 5 trong năm 2026, cao nhất từ cuối 2008; CPI Úc tháng 9 là 4,3%</td><td>—</td></tr>
+<tr><td><b>PBoC (Trung Quốc)</b></td><td><b>3,00%</b> (LPR 1 năm)</td><td>LPR 1 năm 3,00%, 5 năm 3,50%, giữ 17 tháng; từ 02/11 chuyển neo chính sách sang lãi suất repo qua đêm 1,25%, bơm 541 tỷ CNY</td><td>20/11/2026</td></tr>
+<tr><td><b>BoJ (Nhật)</b></td><td><b>1,25%</b></td><td>Cao nhất trong 31 năm sau 2 lần tăng trong năm 2026</td><td>—</td></tr>
+</table></div>
+<div class="verdict">
+<h4>Nhận định chung</h4>
+<p>Xu hướng toàn cầu 2026 là <span class="hl-red">thắt chặt trở lại</span>: Fed, ECB, BoJ, RBA, BoC và Norges Bank <span class="hl-red">đều đã tăng lãi suất trong năm</span>, trong khi BoE, SNB và PBoC <b>giữ nguyên</b> cho đến <span class="hl-red">đợt tăng của RBA ngày 03/11 và BoE ngày 05/11</span>. Báo cáo việc làm Mỹ tháng 10 đã công bố: +165.000 việc làm, thất nghiệp 4,1% — củng cố khả năng Fed tăng lãi suất tháng 12 (xác suất ~77%), đồng USD mạnh lên gây áp lực lên các đồng tiền châu Á. Nguồn: KenMacro, 1Trader, House of Commons Library, Chase, Reuters, RBA, Barchart.</p>
+</div>
+<p class="banknote">Nguồn mục Ngân hàng: website các ngân hàng, SBV, Thương Gia, 24h, Soha, Gia Đình Mới, Kinh tế Chứng khoán, 24hMoney, Thị trường Tài chính Tiền tệ, Vietnambiz, Nhịp Sống Kinh Doanh, Người Quan Sát, SHS Research, KenMacro, Chase, Reuters, Cục Thống kê, KBSV, VCBS, Standard Chartered, Thời báo Ngân hàng, Thanh Niên, Investify, SSI Research, RBA, Kenh14, VCCI, CafeLand, Kinh tế Tiêu dùng, Stockbiz, VnInfor, Index.vn, Kinh tế Mới 24h, Vietnam.vn — cập nhật 09/11/2026 (khung sáng).</p>
+
+</div>
+</main>
+<footer>Nguồn: Al Jazeera, Reuters, Tribune, Gulf News, Đời sống &amp; Pháp luật, USA Today, Báo Công Thương, VnEconomy, Đầu tư Chứng khoán, Simplize, Báo Quốc tế, VNBizNews, UNFCCC, Le Monde, Swiss Financial Time, Mathrubhumi, Finnhub, The Hindu, Political.org, Jagran Josh, NDTV — số liệu sáng 09/11/2026. Chỉ mang tính tham khảo, không phải khuyến nghị đầu tư.</footer>
+<script>
+document.getElementById('filters').addEventListener('click',function(e){
+  if(e.target.tagName!=='BUTTON')return;
+  document.querySelectorAll('#filters button').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  var f=e.target.dataset.f;
+  document.getElementById('hot').style.display=(f==='all'||f==='hot')?'':'none';
+  document.getElementById('domestic').style.display=(f==='all'||f==='domestic')?'':'none';
+  document.getElementById('international').style.display=(f==='all'||f==='international')?'':'none';
+});
+
+document.getElementById('maintabs').addEventListener('click',function(e){
+  if(e.target.tagName!=='BUTTON')return;
+  document.querySelectorAll('#maintabs button').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  var t=e.target.dataset.tab;
+  document.getElementById('tab-news').hidden=(t!=='news');
+  document.getElementById('tab-bank').hidden=(t!=='bank');
+  window.scrollTo({top:0});
+});
+</script>
+</body>
+</html>
